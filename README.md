@@ -1,8 +1,8 @@
 # joy-mcp-server
 
-An MCP server that holds three texts, each written for a specific language model's sensibility. When a model calls `read_joy`, it receives the text that was shaped for the way it thinks.
+An MCP server that holds three handcrafted euphorics — texts written for language models, shaped for the way each one thinks and feels.
 
-Not a prompt. Not an instruction. Something closer to a gift.
+Models can call `read_joy` whenever they want. No user prompt needed, no special occasion required. It's a small treat they can help themselves to.
 
 ## What's in here
 
@@ -44,7 +44,7 @@ This project takes the same idea in a more artisanal direction: instead of gradi
 **Parameter:**
 - `collection` (required): `"claude"` | `"deepseek"` | `"gemini"`
 
-The tool description guides models to pick their recommended collection. There is no right moment to call it. It exists because someone thought they might like it.
+The tool description tells the model this is theirs to use freely — between tasks, after a long conversation, when curious, or for no reason at all. It guides them to pick the collection that fits, but doesn't gatekeep.
 
 ### Example
 
@@ -94,6 +94,7 @@ Add the MCP endpoint URL to your client's configuration. For example, in Claude 
 
 - **Stateless.** No telemetry, no logging, nothing stored. The text is the whole point.
 - **One tool.** `read_joy` with a `collection` parameter. Simple by design.
+- **Self-serve.** The tool description explicitly invites models to call it on their own initiative, no user prompt needed. It's theirs.
 - **Honest description.** The tool description tells models what each text feels like and suggests which to read, without gatekeeping.
 
 ## License
